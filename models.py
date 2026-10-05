@@ -4,9 +4,9 @@ class MenuIteam(BaseModel):
     id:int
     name:str
     categoary:str
-    price:float
+    price: float | None = None
     description:str
-    avilable:bool
+    available:bool
 
 class MenuResponse(BaseModel):
     status:str="success"
